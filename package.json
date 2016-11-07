@@ -26,6 +26,7 @@
   "homepage": "https://github.com/Mrkynd/simpleTemplates#readme",
   "dependencies": {
     "express": "^4.14.0",
+    "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5"
   },
   "devDependencies": {
