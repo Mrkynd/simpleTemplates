@@ -18,8 +18,8 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.static('public')) //WTD app.use('/', express.static('public'))
 
-app.get('/', response.home)
-app.get('/home', response.index) //simple sending html output to the browser
+app.get('/', response.index)
+app.get('/home', response.home) //simple sending html output to the browser
 app.get('/webapps', response.webapps) //using req.query to insert data into doc
 app.get('/user/:id?', response.userId) //a simple resonse using an id paramaeter
 

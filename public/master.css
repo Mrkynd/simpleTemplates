@@ -3,3 +3,10 @@
   font-size: 35px;
   color: rgb(241, 17, 143);
 }
+
+.text {
+  text-align: center;
+  font-size: 18px;
+  font-family: sans-serif;
+  color: rgb(255, 51, 118);
+}
