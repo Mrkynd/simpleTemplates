@@ -1,5 +1,6 @@
 var express = require('express')
 var hbs = require('express-handlebars')
+var fs = require('fs')
 var path = require('path')
 
 var response = require('./routes/res_routes')
@@ -19,7 +20,10 @@ app.set('views', path.join(__dirname, 'views'))
 app.use(express.static('public')) //WTD app.use('/', express.static('public'))
 
 app.get('/', response.index)
-app.get('/home', response.home) //simple sending html output to the browser
+app.get('/about', response.about) //simple sending html output to the browser
+app.get('/contact', response.contact)
+app.get('/ifadmin', response.ifadmin)
+app.post('/admin', response.admin)
 app.get('/webapps', response.webapps) //using req.query to insert data into doc
 app.get('/user/:id?', response.userId) //a simple resonse using an id paramaeter
 

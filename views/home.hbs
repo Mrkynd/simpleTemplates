@@ -1,3 +1,13 @@
-<div class="heading">{{title}}</div>
-<div class="text">First Name: {{firstName}}</div>
-<div class="text">Last Name: {{lastName}}</div>
+<div class="ui container">
+  <div class="ui large teal header">{{title}}</div>
+  <div class="ui text">
+    Hi my name is {{firstName}} {{lastName}}. I am of 25 years of age and I am looking forward to getting to know you.
+  </div>
+  <div class="ui olive segment">
+    <div class="ui teal text">
+      {{#each obj3.prop3}}
+        <li>{{this}}</li>
+      {{/each}}
+    </div>
+  </div>
+</div>

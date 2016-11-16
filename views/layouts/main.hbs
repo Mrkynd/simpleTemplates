@@ -3,9 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <title>{{title}}</title>
-  <link rel="stylesheet" href="/master.css" media="screen" title="no title">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.css" media="screen" title="no title">
+  <link id="pageStyle" type="text/css" rel="stylesheet" href="">
+  <script type="text/javascript">
+    function themeChange(sheet) {
+      document.getElementById('pageStyle').setAttribute('href', sheet)
+    }
+  </script>
 </head>
-<body>
-  {{{body}}}
-</body>
+  <body>
+
+    {{> header}}
+    {{{body}}}
+    {{> footer}}
+
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.6/semantic.min.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  </body>
 </html>

@@ -10,3 +10,9 @@
   font-family: sans-serif;
   color: rgb(255, 51, 118);
 }
+
+#nav {
+  display: flex;
+  color: rgb(173, 46, 84);
+  height: 40px;
+}
