@@ -19,7 +19,7 @@ app.set('views', path.join(__dirname, 'views'))
 
 app.use(express.static('public')) //WTD app.use('/', express.static('public'))
 
-// app.get('/', response.index)
+app.get('/', response.index)
 app.get('/about', response.about) //simple sending html output to the browser
 app.get('/contact', response.contact)
 app.get('/ifadmin', response.ifadmin)
