@@ -1,9 +1,11 @@
-const fs = require('fs');
+var fs = require('fs');
+var config = require('./testingfs.JSON')
 
 // fs.unlink('something.json', (err) => {
 //   if(err) throw err;
 //   console.log('Succesfully deleted /students.json');
 // })
+
 fs.rmdir('testing', function (err) {
   if (err) {
     console.log('** sorry no directory was found');
@@ -12,14 +14,7 @@ fs.rmdir('testing', function (err) {
   }
 })
 
-fs.readFile('test.txt', function (err, data) {
-  if (err) {
-    return console.error(err)
-  }
-  console.log('Async Reading Test.txt', + data.toString());
+fs.readFile('testingfs.json', function (err, data) {
+  if (err) throw err;
+  console.log(config.name);
 })
-
-var data = fs.readFile('test.txt');
-console.log('Sync Read: ' + data.toString());
-
-console.log("Program Ended");

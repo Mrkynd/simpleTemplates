@@ -1,34 +1,15 @@
 <div class="ui container">
   <h1>Contact</h1>
-  <form class="ui teal form" action="index.html" method="post">
+  <form class="ui teal form" action="/contact" method="POST">
     <div class="field">
-      <label>Name and Email</label>
-      <div class="two fields">
+      <label for="firstName">What's your name?</label>
         <div class="field">
-          <input type="text" name="name" value="" placeholder="{{phName}}">
+          <input type="text" name="firstName" placeholder="{{phName}}" value="{{mo.firstName}}">
         </div>
+      <label for="email">What's you email?</label>
         <div class="field">
-          <input type="text" name="name" value="" placeholder="{{phEmail}}">
+          <input type="text" name="email" placeholder="{{phEmail}}" value="{{mo.email}}">
         </div>
-      </div>
     </div>
-    <div class="field">
-      <label>Billing Address</label>
-      <div class="fields">
-        <div class="twelve wide field">
-          <input type="text" name="shipping[address]" placeholder="Street Address">
-        </div>
-        <div class="four wide field">
-          <input type="text" name="shipping[address-2]" placeholder="Apt #">
-        </div>
-      </div>
-    </div>
-    <div class="two fields">
-      <div class="field">
-        <label>State</label>
-        <select class="ui fluid dropdown">
-          <option value="">State</option>
-      <option value="AL">Alabama</option>
-      <option value="AK">Alaska</option>
-      <option value="AZ">Arizona</option>
-</div>
+    <input type="submit" value="Submit">
+</form>

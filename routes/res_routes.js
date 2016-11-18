@@ -1,3 +1,5 @@
+var path = require('path')
+
 module.exports = {
   index: index,
   webapps: webapps,
@@ -5,14 +7,16 @@ module.exports = {
   about: about,
   contact: contact,
   ifadmin: ifAdmin,
-  admin: admin
+  admin: admin,
+  ifadminPosts: ifadminPosts,
+  contactSubmit: contactSubmit
 }
 
 function index(req, res) {
   res.render('home', {
-    title: 'Creating an app that uses GET and POST',
-    firstName: 'John',
-    lastName: 'Marston',
+    title: 'Mini Project Segments',
+    heroText: 'StudyBud',
+    heroImage: 'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg',
     obj3: {
       prop3: ['snoop','doggy', 'dog', 'is', 'at', 'the', 'door']
     }
@@ -25,19 +29,29 @@ function about(req, res) {
   })
 }
 
+//contact submit
 function contact(req, res) {
-  res.render('contact', {
-    phName: 'Please Enter Your Name',
-    phEmail: 'example@gmail.com'
-  })
+  res.render('contact', {mo: req.query})
 }
 
+function contactSubmit(req, res) {
+  console.log(req.body)
+  res.render('success', {yo: req.body, img:'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'})
+}
+
+
+//if admin
 function ifAdmin(req,res) {
-  res.render('ifadmin', {
-    userName: 'joe',
-    passWord: 'blow',
-    allow: false
-  })
+  // var text = '{"greeting": "Hello","goodbyes": "Aroir voir","text": "Hey lookie here, it seems to work out just fine","message": "I guess your fears are now obselete"}'
+  //
+  // var obj = JSON.parse(text)
+  // console.log(obj);
+  res.render('ifadmin', {qs: req.query})
+}
+
+function ifadminPosts(req, res) {
+  console.log(req.body)
+  res.render('admin', {data: req.body})
 }
 
 function admin(req, res) {

@@ -1,8 +1,6 @@
 {
-  "student": {
-    "name": "Alice Cooper",
-    "sex": "Love it",
-    "food": "Tea"
-  }
-
+  "name": "Alison",
+  "age": 34,
+  "sex": "female",
+  "location": "Fayetville, North Carolina"
 }

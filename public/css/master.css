@@ -1,18 +1,13 @@
-.heading {
-  text-align: center;
-  font-size: 35px;
-  color: rgb(241, 17, 143);
+#hero {
+  height: 800px;
+  width: auto;
 }
-
-.text {
-  text-align: center;
-  font-size: 18px;
-  font-family: sans-serif;
-  color: rgb(255, 51, 118);
+#segment-one {
+  height: 200px;
+  background-color: teal;
 }
-
-#nav {
-  display: flex;
-  color: rgb(173, 46, 84);
-  height: 40px;
+.seg-one-text {
+  font-size: 54px;
+  font-family: cursive;
+  color: white;
 }

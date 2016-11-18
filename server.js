@@ -1,5 +1,6 @@
 var express = require('express')
 var hbs = require('express-handlebars')
+var bodyParser = require('body-parser')
 var fs = require('fs')
 var path = require('path')
 
@@ -8,6 +9,9 @@ var request = require('./routes/req_routes')
 
 var port = process.env.PORT || 3000
 var app = express()
+
+var jsonParser = bodyParser.json()
+var urlencodedParser = bodyParser.urlencoded({ extended: false})
 
 app.engine('hbs', hbs({
   extname: 'hbs',
@@ -21,9 +25,15 @@ app.use(express.static('public')) //WTD app.use('/', express.static('public'))
 
 app.get('/', response.index)
 app.get('/about', response.about) //simple sending html output to the browser
+
 app.get('/contact', response.contact)
+app.post('/contact', urlencodedParser, response.contactSubmit)
+
 app.get('/ifadmin', response.ifadmin)
-app.post('/admin', response.admin)
+app.post('/ifadmin', urlencodedParser, response.ifadminPosts)
+
+
+// app.post('/admin', response.admin)
 app.get('/webapps', response.webapps) //using req.query to insert data into doc
 app.get('/user/:id?', response.userId) //a simple resonse using an id paramaeter
 

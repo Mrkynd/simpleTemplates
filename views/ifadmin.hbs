@@ -1,11 +1,14 @@
 <div class="ui container">
-  <form class="ui form" action="/admin" method="post">
-    <div class="field">
-      <label class="field" for="">Username</label>
-        <input type="input" name="name" value=""><br>
-      <label class="field" for="">Password</label>
-        <input type="input" name="name" value="">
-      <input type="button" name="name" value="Submit">
-    </div>
+  <!-- <h1>We want to be able to check if our data still works. <span class="teal">{{text}}</span></h1>
+  <h3>{{message}}</h3> -->
+
+
+  <form class="ui form" action="/ifadmin" method="POST">
+    <label for="who">Login please</label>
+      <label class="field" for="username">Username</label>
+        <input type="text" name="username" value="{{qs.username}}"><br>
+      <label class="field" for="password">Password</label>
+        <input type="text" name="password" value="{{qs.password}}">
+      <input type="submit" value="Submit">
   </form>
 </div>
