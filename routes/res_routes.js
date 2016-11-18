@@ -6,10 +6,10 @@ module.exports = {
   userId: userIdHandler,
   about: about,
   contact: contact,
-  ifadmin: ifAdmin,
-  admin: admin,
-  ifadminPosts: ifadminPosts,
-  contactSubmit: contactSubmit
+  contactSubmit: contactSubmit,
+  login: login,
+  checkLogin: checkLogin
+
 }
 
 function index(req, res) {
@@ -35,32 +35,46 @@ function contact(req, res) {
 }
 
 function contactSubmit(req, res) {
-  console.log(req.body)
-  res.render('success', {yo: req.body, img:'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'})
+  console.log(req.body.firstName)
+    res.render('success', {yo: req.body, img:'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'})
 }
 
 
 //if admin
-function ifAdmin(req,res) {
+function login(req,res) {
   // var text = '{"greeting": "Hello","goodbyes": "Aroir voir","text": "Hey lookie here, it seems to work out just fine","message": "I guess your fears are now obselete"}'
   //
   // var obj = JSON.parse(text)
   // console.log(obj);
-  res.render('ifadmin', {qs: req.query})
+  res.render('login', {qs: req.query})
 }
 
-function ifadminPosts(req, res) {
+function checkLogin(req, res) {
+
   console.log(req.body)
-  res.render('admin', {data: req.body})
-}
 
-function admin(req, res) {
-  res.render('admin', {
-    changeUsername: '',
-    changePassword: '',
-    changeEmail: '',
-    deleteAccount: false
-  })
+  var iUsername = req.body.username
+  var iPassword = req.body.password
+
+  var users = {
+    usernames: 'alex'
+  }
+
+  var secret = {
+    passwords: 'thegreat'
+  }
+
+  var errMsg = {
+    err: "Sorry that wasn't correct please try again",
+    usernameErr: "Wrong username",
+    passwordErr: "Wrong password"
+  }
+
+  if (iUsername === users.usernames && iPassword === secret.passwords) {
+    res.render('login-success', {data: req.body})
+  } else {
+    res.render('login', errMsg)
+  }
 }
 
 function webapps(req, res) {

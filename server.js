@@ -29,8 +29,8 @@ app.get('/about', response.about) //simple sending html output to the browser
 app.get('/contact', response.contact)
 app.post('/contact', urlencodedParser, response.contactSubmit)
 
-app.get('/ifadmin', response.ifadmin)
-app.post('/ifadmin', urlencodedParser, response.ifadminPosts)
+app.get('/login', response.login)
+app.post('/login', urlencodedParser, response.checkLogin)
 
 
 // app.post('/admin', response.admin)
