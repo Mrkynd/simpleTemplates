@@ -4,6 +4,13 @@
   "description": "A simple express server with handlebars implementation",
   "main": "index.js",
   "scripts": {
+    "konnex": "knex init",
+    ":make": "knex migrate:make",
+    ":latest": "knex migrate:latest",
+    ":rollback": "knex migrate:rollback",
+    "seed:make": "knex seed:make",
+    "seed:run": "knex seed:run",
+    "sass": "node-sass -w sass/ -o css/",
     "test": "node ./test/*.js",
     "dev": "nodemon server.js",
     "debug": "node-inspector & nodemon --debug server.js",
@@ -30,7 +37,8 @@
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5",
-    "node-sass": "^3.13.0"
+    "node-sass": "^3.13.0",
+    "sqlite3": "^3.1.8"
   },
   "devDependencies": {
     "node-inspector": "^0.12.8",

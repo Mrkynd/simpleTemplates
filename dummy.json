@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "first_name": "Nicholas",
+    "last_name": "Lopez",
+    "email": "nlopez0@rediff.com",
+    "gender": "Male",
+    "ip_address": "132.31.239.24"
+  },
+  {
+    "id": 2,
+    "first_name": "Tina",
+    "last_name": "Davis",
+    "email": "tdavis1@apache.org",
+    "gender": "Female",
+    "ip_address": "30.27.123.170"
+  },
+  {
+    "id": 3,
+    "first_name": "Virginia",
+    "last_name": "Harrison",
+    "email": "vharrison2@mac.com",
+    "gender": "Female",
+    "ip_address": "148.242.180.225"
+  },
+  {
+    "id": 4,
+    "first_name": "Roy",
+    "last_name": "Watson",
+    "email": "rwatson3@columbia.edu",
+    "gender": "Male",
+    "ip_address": "29.53.58.163"
+  },
+  {
+    "id": 5,
+    "first_name": "Nancy",
+    "last_name": "Grant",
+    "email": "ngrant4@ibm.com",
+    "gender": "Female",
+    "ip_address": "117.77.248.47"
+  },
+  {
+    "id": 6,
+    "first_name": "Wayne",
+    "last_name": "Allen",
+    "email": "wallen5@spiegel.de",
+    "gender": "Male",
+    "ip_address": "197.49.120.23"
+  },
+  {
+    "id": 7,
+    "first_name": "Richard",
+    "last_name": "Gonzales",
+    "email": "rgonzales6@examiner.com",
+    "gender": "Male",
+    "ip_address": "149.4.142.254"
+  },
+  {
+    "id": 8,
+    "first_name": "Patrick",
+    "last_name": "Jones",
+    "email": "pjones7@canalblog.com",
+    "gender": "Male",
+    "ip_address": "166.172.22.194"
+  },
+  {
+    "id": 9,
+    "first_name": "Henry",
+    "last_name": "Johnson",
+    "email": "hjohnson8@studiopress.com",
+    "gender": "Male",
+    "ip_address": "57.150.139.205"
+  },
+  {
+    "id": 10,
+    "first_name": "Ruth",
+    "last_name": "Pierce",
+    "email": "rpierce9@cnbc.com",
+    "gender": "Female",
+    "ip_address": "254.154.251.138"
+  }
+]

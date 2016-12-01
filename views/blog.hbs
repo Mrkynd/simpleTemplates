@@ -1,0 +1,23 @@
+<div style="width: 100%;"class="ui container">
+
+{{#each blog}}
+  <div class="ui link cards">
+    <div class="card">
+      <div class="image">
+        <img src="{{this.image}}">
+      </div>
+      <div class="content">
+        <a class="header">{{this.author}}</a>
+        <div class="meta">
+          <span class="date">{{this.category}}</span>
+        </div>
+        <div class="description">{{this.description}}</div>
+      </div>
+      <div class="extra content">
+        <a><i class="likes icon"></i>Likes: {{this.likes}}</a>
+      </div>
+    </div>
+  </div>
+{{/each}}
+
+</div>
