@@ -28,6 +28,26 @@
       description: 'Find out why your kid is worse off at day care',
       content: "When your daughter hits you or anyone else, firmly say 'No hitting.' Put her in a two- to three-minute time out. That is, put her in a boring place, maybe a chair in the corner for two minutes after she is quiet and stays in the chair. Don't give her a lecture. Don't get angry; just be firm.",
       image: 'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg',
+    },
+    {
+      id: 4,
+      likes: 444,
+      title: 'Test 1',
+      category: 'Parents',
+      author: 'Justine Peterson',
+      description: 'Find out why your kid is worse off at day care',
+      content: "When your daughter hits you or anyone else, firmly say 'No hitting.' Put her in a two- to three-minute time out. That is, put her in a boring place, maybe a chair in the corner for two minutes after she is quiet and stays in the chair. Don't give her a lecture. Don't get angry; just be firm.",
+      image: 'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'
+    },
+    {
+      id: 5,
+      likes: 200,
+      title: 'Silent Night',
+      category: 'Parents',
+      author: 'Justine Peterson',
+      description: 'Find out why your kid is worse off at day care',
+      content: "When your daughter hits you or anyone else, firmly say 'No hitting.' Put her in a two- to three-minute time out. That is, put her in a boring place, maybe a chair in the corner for two minutes after she is quiet and stays in the chair. Don't give her a lecture. Don't get angry; just be firm.",
+      image: 'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'
     }
   ]
 
