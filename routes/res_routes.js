@@ -16,6 +16,7 @@ module.exports = {
   blog: blog
 }
 
+
 function index(req, res) {
   res.render('home', {
     title: 'Mini Project Segments',
@@ -99,7 +100,7 @@ function checkLogin(req, res) {
 }
 
 function webapps(req, res) {
-  res.send(req.query.q + ' is this what you searched for?')
+  res.send(req.query + ' is this what you searched for?')
 }
 
 function userIdHandler(req, res) {

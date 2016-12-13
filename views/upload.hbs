@@ -1,0 +1,16 @@
+<div class="ui container">
+
+  <h1>{{title}}</h1>
+  <div class="ui large image">
+    <img src="{{displayImg.path}}" alt="" />
+  </div>
+  <div class="ui small image">
+    <img src="../uploads/1481415455334error404.jpg" alt="" />
+  </div>
+
+  <form class="ui form" action="/upload" method="post" enctype="multipart/form-data">
+    <input type="file" name="image" multiple/>
+    <button class="ui button" type="submit" value="upload">Upload</button>
+  </form>
+
+</div>

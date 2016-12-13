@@ -7,7 +7,7 @@
       author: 'Michael Pat',
       description: 'Find out how you can deal with these pesky rascals.',
       content: 'Pay a lot of attention to her positive behaviour, for example, when she is friendly, nice to people, or helpful. Notice specific good behaviour at least five times more often than you notice negative behaviour.',
-      image: 'http://res.cloudinary.com/duj6n6g9f/image/upload/v1477548420/maxresdefault_mfeebu.jpg'
+      image: '../img/15.jpg'
     },
     {
       id: 2,

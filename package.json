@@ -37,6 +37,8 @@
     "express": "^4.14.0",
     "express-handlebars": "^3.0.0",
     "handlebars": "^4.0.5",
+    "multer": "^1.2.0",
+    "multiparty": "^4.1.2",
     "node-sass": "^3.13.0",
     "sqlite3": "^3.1.8"
   },
